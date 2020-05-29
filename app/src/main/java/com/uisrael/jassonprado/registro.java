@@ -34,7 +34,7 @@ public class registro extends AppCompatActivity {
         abrir_v2.putExtra("DATOSENVIADOS", recibir.getText().toString());
         abrir_v2.putExtra("DATOSENVIADOS1", nombre.getText().toString());
         startActivity(abrir_v2);
-        Toast.makeText(getApplicationContext(),"ok Guardado con exito ",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext()," Guardado con exito ",Toast.LENGTH_LONG).show();
 
     }
 
