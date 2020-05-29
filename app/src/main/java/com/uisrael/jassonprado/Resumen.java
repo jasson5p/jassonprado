@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 public class Resumen extends AppCompatActivity {
 
-    EditText recibir3,recibir2,recibir1,recibir4;
+    EditText recibir3,recibir2,recibir1,nombre;
     Bundle datos3,datos2,datos1,datos4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +30,11 @@ public class Resumen extends AppCompatActivity {
         recibir2.setText(datoRecibid2);
         recibir2.setText(datoRecibid3);
 
-        recibir4= findViewById(R.id.etTotal);
+        ////////////////////////////
+        nombre= findViewById(R.id.rinputusuario);
         datos4 = getIntent().getExtras();
+        String datoRecibi4 = datos4.getString("DATOSENVIADOS7");
+        nombre.setText(datoRecibi4);
 
 
 

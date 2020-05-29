@@ -15,6 +15,7 @@ public class Encuesta extends AppCompatActivity {
     EditText ingre;
     CheckBox op1,op2,op3;
     RadioButton rop1,rop2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,9 @@ public class Encuesta extends AppCompatActivity {
         rop2=findViewById(R.id.rd2);
         ingre=findViewById(R.id.inputedu);
 
+
     }
+
     public  void  abrirAc(View v){
 
         Intent abrir_v2 = new Intent(  Encuesta.this, Resumen.class);
@@ -37,9 +40,8 @@ public class Encuesta extends AppCompatActivity {
         abrir_v2.putExtra("DATOSENVIADOS5", rop2.getText().toString());
         abrir_v2.putExtra("DATOSENVIADOS6", ingre.getText().toString());
 
-
         startActivity(abrir_v2);
-        Toast.makeText(getApplicationContext(),"oke Guardado exito ",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext()," Guardado exito ",Toast.LENGTH_LONG).show();
 
     }
 

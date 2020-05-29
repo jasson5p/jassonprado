@@ -24,10 +24,19 @@ public class registro extends AppCompatActivity {
         nombre = findViewById(R.id.inputnombre);
         mensual = findViewById(R.id.editText3);
         inicial= findViewById(R.id.editText2);
+    }
+    public void Ingreso(View v){
+        double mi,men, pagoMensual, total;
+        double monto_inicial = 1800;
 
-
+        mi =Double.parseDouble(inicial.getText().toString());
+        men =  monto_inicial - mi;
+        pagoMensual = men / 3;
+        total = pagoMensual + 90;
+        mensual.setText(Double.toString(total));
 
     }
+
     public  void  abrirAc(View v){
 
         Intent abrir_v2 = new Intent(  registro.this, Encuesta.class);

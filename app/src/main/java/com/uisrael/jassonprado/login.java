@@ -33,7 +33,7 @@ public class login extends AppCompatActivity {
 
 
         }else{
-            Toast.makeText(getApplicationContext(),"USUARIO INCORRECTO ",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Usuario o Contraseña INCORRECTO",Toast.LENGTH_LONG).show();
         }
 
     }
